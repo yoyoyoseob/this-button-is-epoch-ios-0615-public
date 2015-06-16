@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18BEDAB036BF4251A442997C /* libPods-EpochButtonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54632C41836246B7B0F6E3A7 /* libPods-EpochButtonTests.a */; };
+		71A976D21B2F85EF003AFA10 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A976D11B2F85EF003AFA10 /* Storyboard.storyboard */; };
+		71A976D51B2F907C003AFA10 /* FISEpochViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A976D41B2F907C003AFA10 /* FISEpochViewController.m */; };
 		72F7EAD8191D78B0000D6B27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F7EAD7191D78B0000D6B27 /* Foundation.framework */; };
 		72F7EADA191D78B0000D6B27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F7EAD9191D78B0000D6B27 /* CoreGraphics.framework */; };
 		72F7EADC191D78B0000D6B27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F7EADB191D78B0000D6B27 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 /* Begin PBXFileReference section */
 		068B27BA944194FCDD181029 /* Pods-EpochButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpochButtonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpochButtonTests/Pods-EpochButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54632C41836246B7B0F6E3A7 /* libPods-EpochButtonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EpochButtonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A976D11B2F85EF003AFA10 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		71A976D31B2F907C003AFA10 /* FISEpochViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISEpochViewController.h; sourceTree = "<group>"; };
+		71A976D41B2F907C003AFA10 /* FISEpochViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISEpochViewController.m; sourceTree = "<group>"; };
 		72F7EAD4191D78B0000D6B27 /* EpochButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpochButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F7EAD7191D78B0000D6B27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72F7EAD9191D78B0000D6B27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,9 +84,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71A976CE1B2F8554003AFA10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		71A976CF1B2F85B0003AFA10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71A976D31B2F907C003AFA10 /* FISEpochViewController.h */,
+				71A976D41B2F907C003AFA10 /* FISEpochViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		71A976D01B2F85B8003AFA10 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		72F7EACB191D78B0000D6B27 = {
 			isa = PBXGroup;
 			children = (
+				71A976D01B2F85B8003AFA10 /* Controllers */,
+				71A976CF1B2F85B0003AFA10 /* Views */,
+				71A976CE1B2F8554003AFA10 /* Models */,
 				72F7EADD191D78B0000D6B27 /* EpochButton */,
 				72F7EAF6191D78B0000D6B27 /* EpochButtonTests */,
 				72F7EAD6191D78B0000D6B27 /* Frameworks */,
@@ -116,6 +147,7 @@
 			children = (
 				72F7EAE6191D78B0000D6B27 /* FISAppDelegate.h */,
 				72F7EAE7191D78B0000D6B27 /* FISAppDelegate.m */,
+				71A976D11B2F85EF003AFA10 /* Storyboard.storyboard */,
 				72F7EAE9191D78B0000D6B27 /* Images.xcassets */,
 				72F7EADE191D78B0000D6B27 /* Supporting Files */,
 			);
@@ -240,6 +272,7 @@
 			files = (
 				72F7EAE2191D78B0000D6B27 /* InfoPlist.strings in Resources */,
 				72F7EAEA191D78B0000D6B27 /* Images.xcassets in Resources */,
+				71A976D21B2F85EF003AFA10 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +326,7 @@
 			files = (
 				72F7EAE4191D78B0000D6B27 /* main.m in Sources */,
 				72F7EAE8191D78B0000D6B27 /* FISAppDelegate.m in Sources */,
+				71A976D51B2F907C003AFA10 /* FISEpochViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
